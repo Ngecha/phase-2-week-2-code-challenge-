@@ -17,9 +17,7 @@ This is our app:
 
 ### Running
 
-* Open the following [link](https://kn-bot-bottlr.vercel.app/) in your web browser:
-
-* ``` https://kn-bot-bottlr.vercel.app/ ```
+* Open the following [link] in your web browser:
 
 * Go through the list of bots available.
 
