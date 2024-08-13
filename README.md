@@ -17,7 +17,7 @@ This is our app:
 
 ### Running
 
-* Open the following [link] in your web browser:
+* Open the following [link](https://phase-2-week-2-code-challenge-two.vercel.app/) in your web browser:
 
 * Go through the list of bots available.
 
@@ -25,4 +25,4 @@ This is our app:
 
 * They will show at the top as a collection.
 
-* To remove remove a partcular selected bot, click on it and it will be removed from your selection.
+* To remove remove a particular selected bot, click on it and it will be removed from your selection.

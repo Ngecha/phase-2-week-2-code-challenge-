@@ -1,6 +1,9 @@
 import React from "react";
 
-function SelectedBot({
+
+
+/// The selected Army
+function SelectedBot({//the props passed
   image,
   name,
   health,

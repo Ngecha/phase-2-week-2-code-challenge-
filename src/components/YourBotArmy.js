@@ -18,12 +18,12 @@ function YourBotArmy({ electedBot, bots, setElectedBot }) {
     }
   });
 
-  //functon to get the ids of the selected to be removed bots in the selected army
+  //function to get the ids of the selected to be removed bots.
 
   console.log(theSelectedArmy);
   console.log(electedBot);
 
-  //iterates through the filtered an added bot items and appends the details to a bot card
+  //iterates through the filtered and added bot items and appends the details to a bot card
   const theeBots = theSelectedArmy.map((content, index) => (
     <SelectedBot
       image={content.avatar_url}
@@ -43,7 +43,7 @@ function YourBotArmy({ electedBot, bots, setElectedBot }) {
     <div>
       <div className="row m-auto">
         <center>
-          <h2 style={{ color: "red" }}>Bot Army</h2>
+          <h2>Your Army</h2>
         </center>
         {theeBots}
       </div>

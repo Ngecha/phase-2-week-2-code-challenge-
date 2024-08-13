@@ -7,7 +7,8 @@ function BotItem({ bots, handleClicked, handleDelete }) {
       <h2 className="display-4">Available Bots</h2>
       <div className="d-flex flex-wrap">
         {bots.map((bot) => (
-          <div
+         ///// The bot card
+         <div 
             className="card m-auto"
             onClick={() => handleClicked(bot.id)}
             key={bot.id}
@@ -29,7 +30,7 @@ function BotItem({ bots, handleClicked, handleDelete }) {
                 <button
                   type="button"
                   class="btn btn-outline-danger"
-                  onClick={() => handleDelete(bot.id)}
+                  onClick={() => handleDelete(bot.id)} //delete button
                 >
                   X
                 </button>
