@@ -16,10 +16,8 @@ function SelectedBot({//the props passed
 }) {
   return (
     <div className="col-3 p-1">
-      <h2>Your Army</h2>
-
       <div
-        className="card border-warning h-100"
+        className="card"
         key={id}
         name={id}
         onClick={() => handleDelete(id)}
