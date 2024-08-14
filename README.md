@@ -8,12 +8,6 @@ This ia a web app that has a listing of army bots that can be enlisted in an arm
 
 As a use you can custom build your own Bot Army and compare the health, damage, armor and the bot class of the bots in our listing.
 
-This is our app:
-
-
-
-* An inter galactic war.
-* A web browser of your choice.
 
 ### Running
 
