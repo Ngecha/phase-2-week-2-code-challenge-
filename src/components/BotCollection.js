@@ -17,13 +17,18 @@ function BotCollection() {
       });
   }, []);
 
-  function handleDelete(id) {
-    fetch(`url/${id}`, {
-      method: "DELETE",
-    }).then(() => {
+  async function handleDelete(id) {
+    try{
+      await  fetch(`url/${id}`, {
+        method: "DELETE",
+      });
       setBots((bots) => bots.filter((bt) => bt.id !== id));
-    });
+      }
+      catch (error) {
+        console.error('Error deleting transaction:', error);
+    }
   }
+
 
   function handleClicked(idInput) {
     setElectedBot([...electedBot, idInput]);
