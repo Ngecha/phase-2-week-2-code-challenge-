@@ -20,9 +20,9 @@ function BotCollection() {
   async function handleDelete(botId) {
     try{
       await  fetch(`url/${botId}`, {
-        method: "DELETE",
+        method: "DELETE"
       });
-      setBots((bots) => bots.filter((bt) => bt.id !== botId));
+      setBots((bots) => bots.filter((bt) => bt.id !== botId))
       }
       catch (error) {
         console.error('Error deleting transaction:', error);
