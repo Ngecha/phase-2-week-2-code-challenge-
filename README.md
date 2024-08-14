@@ -4,7 +4,7 @@ Bot Army Selector
 
 ### Description
 
-This ia a web app theta has a listing of army bots that can be enlisted in an army.
+This ia a web app that has a listing of army bots that can be enlisted in an army.
 
 As a use you can custom build your own Bot Army and compare the health, damage, armor and the bot class of the bots in our listing.
 
