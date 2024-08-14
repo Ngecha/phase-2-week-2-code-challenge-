@@ -24,17 +24,10 @@ function YourBotArmy({ electedBot, bots, setElectedBot }) {
   console.log(electedBot);
 
   //iterates through the filtered and added bot items and appends the details to a bot card
-  const theeBots = theSelectedArmy.map((content, index) => (
+  const theeBots = theSelectedArmy.map((content)=> (
     <SelectedBot
-      image={content.avatar_url}
-      name={content.name}
-      health={content.health}
-      damage={content.damage}
-      armor={content.armor}
-      bot_class={content.bot_class}
-      catchphrase={content.catchphrase}
-      key={content.name + index}
-      id={content.id}
+      content={content}
+      key={content.id}
       handleReleaseBot={handleReleaseBot}
     />
   ));

@@ -1,36 +1,23 @@
 import React from "react";
 
-
-
 /// The selected Army
-function SelectedBot({//the props passed
-  image,
-  name,
-  health,
-  damage,
-  armor,
-  bot_class,
-  catchphrase,
-  id,
-  handleReleaseBot,
-}) {
+function SelectedBot({ content, handleReleaseBot }) {
   return (
     <div className="col-3 p-1">
       <div
         className="card"
-        key={id}
-        name={id}
-        onClick={() => handleReleaseBot(id)}
+        key={content.id}
+        onClick={() => handleReleaseBot(content.id)}
       >
-        <img className="card-img-top" src={image} alt="news item" />
+        <img className="card-img-top" src={content.avatar_url} alt="news item" />
         <div className="card-body">
-          <h3 className="card-title">{name}</h3>
-          <h4 className="card-title">{bot_class}</h4>
-          <p className="card-text">{catchphrase}</p>
+          <h3 className="card-title">{content.name}</h3>
+          <h4 className="card-title">{content.bot_class}</h4>
+          <p className="card-text">{content.catchphrase}</p>
           <div>
-            <p>Health: {health} </p>
-            <p>Damage: {damage}</p>
-            <p>Armor: {armor}</p>
+            <p>Health: {content.health} </p>
+            <p>Damage: {content.damage}</p>
+            <p>Armor: {content.armor}</p>
           </div>
         </div>
       </div>

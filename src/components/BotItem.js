@@ -29,7 +29,7 @@ function BotItem({ bots, handleClicked, handleDelete }) {
               <center>
                 <button
                   type="button"
-                  class="btn btn-outline-danger"
+                  className="btn btn-outline-danger"
                   onClick={() => handleDelete(bot.id)} //delete button
                 >
                   X
