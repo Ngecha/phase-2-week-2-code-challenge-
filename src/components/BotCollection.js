@@ -17,12 +17,12 @@ function BotCollection() {
       });
   }, []);
 
-  async function handleDelete(id) {
+  async function handleDelete(botId) {
     try{
-      await  fetch(`url/${id}`, {
+      await  fetch(`url/${botId}`, {
         method: "DELETE",
       });
-      setBots((bots) => bots.filter((bt) => bt.id !== id));
+      setBots((bots) => bots.filter((bt) => bt.id !== botId));
       }
       catch (error) {
         console.error('Error deleting transaction:', error);

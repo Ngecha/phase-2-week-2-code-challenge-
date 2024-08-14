@@ -3,7 +3,7 @@ import SelectedBot from "./SelectedBot";
 
 function YourBotArmy({ electedBot, bots, setElectedBot }) {
   // delete function
-  function handleDelete(input) {
+  function handleReleaseBot(input) {
     setElectedBot(electedBot.filter((bot) => bot !== input));
     console.log(input);
   }
@@ -35,7 +35,7 @@ function YourBotArmy({ electedBot, bots, setElectedBot }) {
       catchphrase={content.catchphrase}
       key={content.name + index}
       id={content.id}
-      handleDelete={handleDelete}
+      handleReleaseBot={handleReleaseBot}
     />
   ));
 

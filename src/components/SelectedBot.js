@@ -12,7 +12,7 @@ function SelectedBot({//the props passed
   bot_class,
   catchphrase,
   id,
-  handleDelete,
+  handleReleaseBot,
 }) {
   return (
     <div className="col-3 p-1">
@@ -20,7 +20,7 @@ function SelectedBot({//the props passed
         className="card"
         key={id}
         name={id}
-        onClick={() => handleDelete(id)}
+        onClick={() => handleReleaseBot(id)}
       >
         <img className="card-img-top" src={image} alt="news item" />
         <div className="card-body">
